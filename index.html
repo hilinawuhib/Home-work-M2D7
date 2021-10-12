@@ -100,10 +100,9 @@
       }
 
       p {
-      
       }
       footer {
-        background-color: rgb(72, 178, 211)!important;
+        background-color: rgb(72, 178, 211) !important;
       }
     </style>
     <link
@@ -148,7 +147,7 @@
         </div>
       </header>
 
-      <div id="navbar"class="nav-scroller py-1 mb-2">
+      <div id="navbar" class="nav-scroller py-1 mb-2">
         <nav class="nav d-flex justify-content-between">
           <a class="p-2 text-muted" href="#">World</a>
           <a class="p-2 text-muted" href="#">U.S.</a>
@@ -165,7 +164,7 @@
         </nav>
       </div>
 
-      <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+      <div id="jid" class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
         <div class="col-md-6 px-0">
           <h1 class="display-4 font-italic">
             Title of a longer featured blog post
@@ -472,7 +471,7 @@
             </ol>
           </div>
 
-          <div class="p-4">
+          <div id="elseid" class="p-4">
             <h4 class="font-italic">Elsewhere</h4>
             <ol class="list-unstyled">
               <li><a href="#">GitHub</a></li>
@@ -500,30 +499,42 @@
 
     <script>
       /*
-          JS Exercises
-          EX11) Write a function to add a new link into the navbar
-          EX12) Write a function to change the color of the main title
-          EX13) Write a function to change the background of the jumbotron
-          EX14) Write a function to remove all the links under "Elsewhere"
-          EX15) Write a function to change the column size for heading in jumbotron
-          EX16) Write a function to remove the "Search" magnifying glass icon
-          EX17) Write a function to trim just the first 50 characters in the first paragraph for each blog post
-          EX18) Write a function and attach it to the "Newer" button, to add new Blog Post (just div and title)
-          EX19) Write a function and attach it to the "Older" button, to remove the last Blog Post
-          EX20) Write an alert with the name of the author every time the user hover with the mouse over an author name
-      */
-     function addLinksToNav() {
-         
-         let link = document.createElement("a");
-         link.classList.add("link");
-         link.href = "#Link1";
-         link.textContent = "LINK 1";
-         document.getElementById("navbar").appendChild(link);
-        }
-        addLinksToNav
-      
-            
-    
+                JS Exercises
+                EX11) Write a function to add a new link into the navbar
+                EX12) Write a function to change the color of the main title
+                EX13) Write a function to change the background of the jumbotron
+                EX14) Write a function to remove all the links under "Elsewhere"
+                EX15) Write a function to change the column size for heading in jumbotron
+                EX16) Write a function to remove the "Search" magnifying glass icon
+                EX17) Write a function to trim just the first 50 characters in the first paragraph for each blog post
+                EX18) Write a function and attach it to the "Newer" button, to add new Blog Post (just div and title)
+                EX19) Write a function and attach it to the "Older" button, to remove the last Blog Post
+                EX20) Write an alert with the name of the author every time the user hover with the mouse over an author name
+            */
+      function addLinksToNav(link) {
+        let link = document.createElement("a");
+      }
+      addLinksToNav();
+      function changeColorOfH1() {
+        document.querySelector("h1").style.color = "yellow";
+      }
+      changeColorOfH1();
+
+      function changeBackgroundColor() {
+        document.getElementById("jid").style.backgroundColor = "yellow";
+      }
+      changeBackgroundColor();
+
+      function removeLinks() {
+        let content = document.getElementById("elseid");
+        content.remove();
+      }
+
+      removeLinks();
+
+      function changeTheColumnNumber() {
+        document.get;
+      }
     </script>
   </body>
 </html>
